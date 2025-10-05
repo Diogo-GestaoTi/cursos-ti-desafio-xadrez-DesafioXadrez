@@ -5,28 +5,27 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
-
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
-
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
-
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
-
-    return 0;
+   int movimentocompleto = 1; //flag para indicar se o movimento é completo ou não
+    // Exemplo de movimentação da torre no tabuleiro de xadrez
+    for (int i = 0; i < 5; i++){
+        printf("Direita\n"); // imprime a direção do movimento
+    }
+    // Exemplo de movimentação do bispo no tabuleiro de xadrez
+    for (int i = 0; i < 5; i++){
+        printf("Cima Direita\n"); // imprime a direção do movimento
+    } 
+     //Exemplo de movimentação da Rainha no tabuleiro de xadrez 
+    for (int i = 0; i < 8; i++){
+        printf("Esquerda\n"); // imprime a direção do movimento
+    }
+    //Exemplo de Movimentação do Cavalo no tabuleiro de xadrez
+    while (movimentocompleto --){
+        for (int i = 0; i < 2; i++){
+            printf("Cima\n"); // imprime a direção do movimento
+        }
+        for (int i = 0; i < 1; i++){
+            printf("Direita\n"); // imprime a direção do movimento
+        }
+    }
+return 0;
 }
